@@ -1,5 +1,5 @@
 {
-	"period": "2017-2018/1",
+	"period": "2017-2018/2",
 	"projects": [
 		{
 			"name": "sample",
@@ -10,6 +10,28 @@
 					"name": "Bedők Dávid",
 					"neptun": "Q59R7A",
 					"github": "davidbedok"
+				}
+			],
+			"interfaces": [
+				{
+					"tpye": "restful",
+					"goal": "handle crud operations"
+				},
+				{
+					"type": "jms",
+					"goal": "bulk upload data"
+				}
+			]
+		},
+		{
+			"name": "projectmico",
+			"description": " mICO - A system to support an upcoming ico.",
+			"platform": "weblogic",
+			"members": [
+				{
+					"name": "Tureczki Bence",
+					"neptun": "P4TKWI",
+					"github": "tureczki"
 				}
 			],
 			"interfaces": [
