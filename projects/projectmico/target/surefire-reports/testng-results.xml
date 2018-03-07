@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="org.projectmico.artifact.Test_Application" duration-ms="63" started-at="2018-03-07T16:33:17Z" finished-at="2018-03-07T16:33:17Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="63" started-at="2018-03-07T16:33:17Z" finished-at="2018-03-07T16:33:17Z">
+      <class name="org.projectmico.artifact.Test_Application">
+        <test-method status="PASS" signature="testApplication()[pri:0, instance:org.projectmico.artifact.Test_Application@6bdf28bb]" name="testApplication" duration-ms="21" started-at="2018-03-07T16:33:17Z" finished-at="2018-03-07T16:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApplication -->
+      </class> <!-- org.projectmico.artifact.Test_Application -->
+    </test> <!-- Command line test -->
+  </suite> <!-- org.projectmico.artifact.Test_Application -->
+</testng-results>
