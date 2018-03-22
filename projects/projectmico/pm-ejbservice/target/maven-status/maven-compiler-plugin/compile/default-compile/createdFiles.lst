@@ -1,0 +1,6 @@
+org\tureczki\projectmico\ejbservice\domain\InvestmentCategoryStub.class
+org\tureczki\projectmico\ejbservice\facade\InvestmentFacadeImpl.class
+org\tureczki\projectmico\ejbservice\domain\InvestmentCriteria.class
+org\tureczki\projectmico\ejbservice\domain\InvestmentStub.class
+org\tureczki\projectmico\ejbservice\facade\InvestmentFacade.class
+org\tureczki\projectmico\ejbservice\exception\FacadeException.class

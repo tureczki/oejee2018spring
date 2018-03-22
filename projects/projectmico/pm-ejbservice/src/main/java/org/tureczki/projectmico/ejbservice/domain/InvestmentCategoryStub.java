@@ -1,4 +1,6 @@
-package hu.tureczki.projectmico.ejbservice.domain;
+package org.tureczki.projectmico.ejbservice.domain;
+
+import java.math.BigDecimal;
 
 public enum InvestmentCategoryStub {
 	USD("United States Dollar"),

@@ -1,14 +1,15 @@
-package hu.tureczki.projectmico.ejbservice.facade;
+package org.tureczki.projectmico.ejbservice.facade;
 
 import java.util.List;
 import javax.ejb.Local;
-import hu.tureczki.projectmico.ejbservice.domain.InvestmentCriteria;
-import hu.tureczki.projectmico.ejbservice.domain.InvestmentStub;
-import hu.tureczki.projectmico.ejbservice.exception.FacadeException;
+import org.tureczki.projectmico.ejbservice.domain.InvestmentCriteria;
+import org.tureczki.projectmico.ejbservice.domain.InvestmentStub;
+import org.tureczki.projectmico.ejbservice.exception.FacadeException;
 
 @Local
-public class InvestmentFacade {
+public interface InvestmentFacade {
 	
 	InvestmentStub getInvestment(String investmentID) throws FacadeException;
 	List<InvestmentStub> getInvestments(InvestmentCriteria criteria) throws FacadeException;
+
 }

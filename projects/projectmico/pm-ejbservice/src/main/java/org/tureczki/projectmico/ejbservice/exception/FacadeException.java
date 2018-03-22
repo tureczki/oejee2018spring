@@ -1,4 +1,4 @@
-package hu.tureczki.projectmico.ejbservice.exception;
+package org.tureczki.projectmico.ejbservice.exception;
 
 public class FacadeException extends Exception {
 	

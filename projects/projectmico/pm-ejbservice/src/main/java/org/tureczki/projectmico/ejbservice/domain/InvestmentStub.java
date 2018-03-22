@@ -1,4 +1,6 @@
-package hu.tureczki.projectmico.ejbservice.domain;
+package org.tureczki.projectmico.ejbservice.domain;
+
+import java.math.BigDecimal;
 
 public class InvestmentStub {
 	
@@ -12,6 +14,6 @@ public class InvestmentStub {
 		this.investorID = investorID;
 		this.investmentID = investmentID;
 		this.investedAmount = investedAmount;
-		this.category = investmentCategory;
+		this.investmentCategory = investmentCategory;
 	}
 }

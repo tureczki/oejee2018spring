@@ -1,13 +1,15 @@
-package hu.tureczki.projectmico.ejbservice.domain;
+package org.tureczki.projectmico.ejbservice.domain;
 
-public class InvestmentStub {
+import java.math.BigDecimal;
+
+public class InvestmentCriteria {
 	
 	private String investorID;
 	private InvestmentCategoryStub investmentCategory;
 	private BigDecimal minInvestedAmount;
 	private BigDecimal maxInvestedAmount;
 	
-	public InvestmentStub(){
+	public InvestmentCriteria(){
 	
 	}
 }

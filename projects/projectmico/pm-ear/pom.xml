@@ -14,12 +14,12 @@
    </parent>
    <dependencies>
       <dependency>
-         <groupId>org.projectmico.artifact</groupId>
+         <groupId>org.tureczki.projectmico</groupId>
          <artifactId>pm-ejbservice</artifactId>
          <version>1.0</version>
       </dependency>
       <dependency>
-         <groupId>org.projectmico.artifact</groupId>
+         <groupId>org.tureczki.projectmico</groupId>
          <artifactId>pm-weblayer</artifactId>
          <version>1.0</version>
          <type>war</type>
