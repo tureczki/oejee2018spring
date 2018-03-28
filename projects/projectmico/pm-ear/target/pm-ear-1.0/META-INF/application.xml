@@ -6,6 +6,9 @@
   <display-name>pm-ear</display-name>
   <description>A system to support an upcoming ICO.</description>
   <module>
+    <ejb>pm-ejbservice-1.0.jar</ejb>
+  </module>
+  <module>
     <web>
       <web-uri>pm-weblayer-1.0.war</web-uri>
       <context-root>/pm-weblayer</context-root>

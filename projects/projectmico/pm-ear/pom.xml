@@ -17,6 +17,7 @@
          <groupId>org.tureczki.projectmico</groupId>
          <artifactId>pm-ejbservice</artifactId>
          <version>1.0</version>
+         <type>ejb</type>
       </dependency>
       <dependency>
          <groupId>org.tureczki.projectmico</groupId>

@@ -16,4 +16,9 @@ public class InvestmentStub {
 		this.investedAmount = investedAmount;
 		this.investmentCategory = investmentCategory;
 	}
+	 
+	public String toString(){ 
+	  return "Investment ID: " + this.investmentID;  
+	 } 
+	
 }
