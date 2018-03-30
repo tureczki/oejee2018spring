@@ -1,27 +1,52 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.tureczki.projectmico</groupId>
-  <artifactId>projectmico</artifactId>
-  <version>1.0</version>
-  <packaging>pom</packaging>
-  <name>Aggregator - Project mICO</name>
-  <description>A system to support an upcoming ICO.</description>
-
-<modules>
-<module>pm-ear</module>
-<module>pm-ejbservice</module>
-<module>pm-weblayer</module>
-</modules>
-
-<properties>
-
-<version.javaee>6.0</version.javaee>
-<version.plugin.ejb>2.5.1</version.plugin.ejb>
-<version.plugin.ear>2.10.1</version.plugin.ear>
-
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<maven.compiler.source>1.8</maven.compiler.source>
-<maven.compiler.target>1.8</maven.compiler.target>
-</properties>
-
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.tureczki.projectmico</groupId>
+    <artifactId>projectmico</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Aggregator - Project mICO</name>
+    <description>A system to support an upcoming ICO.</description>
+    <modules>
+        <module>pm-ear</module>
+        <module>pm-ejbservice</module>
+        <module>pm-weblayer</module>
+    </modules>
+    <properties>
+        <version.javaee>6.0</version.javaee>
+        <version.plugin.ejb>2.5.1</version.plugin.ejb>
+        <version.plugin.ear>2.10.1</version.plugin.ear>
+        <version.log4j>1.2.17</version.log4j>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${version.log4j}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>${version.javaee}</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>${version.plugin.ejb}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

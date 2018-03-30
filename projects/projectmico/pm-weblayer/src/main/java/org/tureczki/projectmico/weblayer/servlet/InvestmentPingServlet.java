@@ -11,16 +11,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import org.apache.log4j.Logger;
 
 @WebServlet("/InvestmentPing")
 public class InvestmentPingServlet extends HttpServlet {
 
+	private static final Logger LOGGER = Logger.getLogger(InvestmentPingServlet.class);
+	
 	@EJB
 	private InvestmentFacade facade;
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {
+		LOGGER.info("Get investment by user.");
 		response.setCharacterEncoding("UTF-8");
 		final PrintWriter out = response.getWriter();
 		try {

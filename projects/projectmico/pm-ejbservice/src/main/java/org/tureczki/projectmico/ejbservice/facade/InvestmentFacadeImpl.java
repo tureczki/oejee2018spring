@@ -2,6 +2,8 @@ package org.tureczki.projectmico.ejbservice.facade;
 
 import javax.ejb.Stateless;
 import java.util.List;
+import org.apache.log4j.Logger;
+
 import org.tureczki.projectmico.ejbservice.domain.InvestmentStub;
 import org.tureczki.projectmico.ejbservice.domain.InvestmentCriteria;
 import org.tureczki.projectmico.ejbservice.domain.InvestmentCategoryStub;
@@ -12,8 +14,14 @@ import java.util.ArrayList;
 @Stateless(mappedName = "ejb/investmentFacade")
 public class InvestmentFacadeImpl implements InvestmentFacade {
 
+	private static final Logger LOGGER = Logger.getLogger(InvestmentFacadeImpl.class);
+	
+	
 	@Override
 	public InvestmentStub getInvestment(String investmentID) throws FacadeException{
+		if(LOGGER.isDebugEnabled()){
+			LOGGER.debug("Get investment (investment ID: " + investmentID + ") ");
+		}
 		return new InvestmentStub("TBP4TKWI", investmentID,
 				new BigDecimal(9793979), InvestmentCategoryStub.ETH);
 	}
