@@ -12,6 +12,7 @@
         <module>pm-ear</module>
         <module>pm-ejbservice</module>
         <module>pm-weblayer</module>
+        <module>pm-persistence</module>
     </modules>
     <properties>
         <version.javaee>6.0</version.javaee>
