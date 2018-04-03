@@ -15,7 +15,12 @@ import java.util.ArrayList;
 public class InvestmentFacadeImpl implements InvestmentFacade {
 
 	private static final Logger LOGGER = Logger.getLogger(InvestmentFacadeImpl.class);
+
+	@EJB
+	private InvestmentService service;
 	
+	@EJB
+	private InvestmentConverter converter;
 	
 	@Override
 	public InvestmentStub getInvestment(String investmentID) throws FacadeException{

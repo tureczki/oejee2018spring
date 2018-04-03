@@ -4,7 +4,19 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "investment")
+@NamedQueries(
+		value = {
+				//
+				@NamedQuery(investor_id = Investment.GET_BY_INVESTMENTID, query = "SELECT"
+						+ " b from Investment b where b.investment_id=:investment_id"),
+				@NamedQuery(investor_id = Investment.GET_ALL, query = "SELECT b from"
+						+ " Invesmtent b ORDER BY b.investment_id")
+		}
+		)
 public class Investment implements Seriazable{
+	
+	public static final String GET_BY_INVESTMENTID = "Investment.getByInvestmentID";
+	public static final String GET_ALL = "Investment.getAll";
 	
 	@Id
 	@SequenceGenerator(name = "generatorInvestment", sequenceName =
