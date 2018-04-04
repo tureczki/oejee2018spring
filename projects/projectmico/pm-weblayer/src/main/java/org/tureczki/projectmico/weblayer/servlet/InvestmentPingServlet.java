@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import org.apache.log4j.Logger;
+import javax.servlet.RequestDispatcher;
 
 @WebServlet("/InvestmentPing")
 public class InvestmentPingServlet extends HttpServlet {
@@ -24,6 +25,12 @@ public class InvestmentPingServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {
+		
+        RequestDispatcher dispatcher = getServletContext()
+                .getRequestDispatcher("/WEB-INF/investment.html");
+        dispatcher.forward(request, response);
+		
+		/* 
 		LOGGER.info("Get investment by user.");
 		response.setCharacterEncoding("UTF-8");
 		final PrintWriter out = response.getWriter();
@@ -34,6 +41,7 @@ public class InvestmentPingServlet extends HttpServlet {
 		catch(final FacadeException e) {
 			out.println(e.getLocalizedMessage());
 		}
-		out.close();
+		out.close(); */
+		
 	}
 }

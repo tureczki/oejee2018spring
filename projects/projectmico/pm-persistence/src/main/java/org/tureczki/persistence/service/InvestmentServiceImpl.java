@@ -1,4 +1,10 @@
-package org.tureczki.persistence.entity.service;
+package org.tureczki.persistence.service;
+
+import org.tureczki.persistence.entity.Investment;
+import java.util.List;
+import javax.ejb.*;
+import javax.persistence.*;
+import org.tureczki.persistence.entity.trunk.InvestmentCategory;
 
 @Stateless(mappedName = "ejb/investmentService")
 @TransactionManagement(TransactionManagementType.CONTAINER)
@@ -9,15 +15,14 @@ public class InvestmentServiceImpl implements InvestmentService{
 	private EntityManager entityManager;
 	
 	@Override
-	public Investment read(final String investment_id) throws PersistenceServiceException{
+	public Investment read(final String investment_id) throws Exception{
 		Investment result = null;
 		try{
 			result = this.entityManager.createNamedQuery(Investment.GET_BY_INVESTMENTID,
 					Investment.class).setParameter("investment_ID", investment_id).getSingleResult();
-			catch(final Exception e){
-				throws new PersistenceServiceException("Unknown error when fetching invesmtent by"
-						+ "investment ID (" + investment_id + ")!" + e.getLocalizedMessage().e);				
-			}
+					}
+		catch(final Exception e)								
+		{
 		}
 		return result;
 	}

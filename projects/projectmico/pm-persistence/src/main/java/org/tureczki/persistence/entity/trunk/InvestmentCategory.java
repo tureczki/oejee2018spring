@@ -1,4 +1,4 @@
-package org.tureczki.projectmico.persistence.entity.trunk;
+package org.tureczki.persistence.entity.trunk;
 
 public enum InvestmentCategory {
 	USD,

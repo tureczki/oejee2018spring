@@ -14,4 +14,7 @@
       <context-root>/pm-weblayer</context-root>
     </web>
   </module>
+  <module>
+    <ejb>pm-persistence-1.0.jar</ejb>
+  </module>
 </application>
