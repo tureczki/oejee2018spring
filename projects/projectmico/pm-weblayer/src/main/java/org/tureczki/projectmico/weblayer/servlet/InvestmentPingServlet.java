@@ -26,9 +26,19 @@ public class InvestmentPingServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {
 		
+		String investmentID = request.getParameter("investmentid");
+		
+		try{
+			InvestmentStub investment = this.facade.getInvestment(investmentID);
+			request.setAttribute("investment", investment);
+		} catch(final FacadeException e){
+			LOGGER.error(e, e);
+		}
+		
         RequestDispatcher dispatcher = getServletContext()
-                .getRequestDispatcher("/WEB-INF/investment.html");
+                .getRequestDispatcher("/WEB-INF/investment.jsp");
         dispatcher.forward(request, response);
+		
 		
 		/* 
 		LOGGER.info("Get investment by user.");

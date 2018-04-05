@@ -17,10 +17,10 @@ import org.tureczki.persistence.entity.trunk.InvestmentCategory;
 
 @Entity
 @Table(name = "investment")
-@NamedQueries(
+ @NamedQueries(
 		value = {
-@NamedQuery(name = Investment.GET_BY_INVESTMENTID, query = "SELECT b FROM Investment b WHERE b.investment_id=1"),
-@NamedQuery(name = Investment.GET_ALL, query = "SELECT b FROM Investment b"),
+ @NamedQuery(name = Investment.GET_BY_INVESTMENTID, query = "SELECT b FROM Investment b"),
+ @NamedQuery(name = Investment.GET_ALL, query = "SELECT b FROM Investment b"),
 		}
 		)
 public class Investment implements Serializable{
