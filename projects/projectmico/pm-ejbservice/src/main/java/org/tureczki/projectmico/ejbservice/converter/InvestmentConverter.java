@@ -2,11 +2,11 @@ package org.tureczki.projectmico.ejbservice.converter;
 
 import java.util.List;
 import javax.ejb.*;
-import org.tureczki.projectmico.ejbservice.domain.InvestmentStub;
-import org.tureczki.persistence.entity.Investment;
+import org.tureczki.projectmico.ejbservice.domain.*;
+import org.tureczki.persistence.entity.*;
 
 @Local
 public interface InvestmentConverter{
-	InvestmentStub to(Investment investment);
+	TesztadatStub to(Tesztadat tesztadat);
 //	List<InvestmentStub> to(List<Investment> investments);
 }

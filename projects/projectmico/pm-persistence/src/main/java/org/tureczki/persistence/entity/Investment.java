@@ -19,7 +19,7 @@ import org.tureczki.persistence.entity.trunk.InvestmentCategory;
 @Table(name = "investment")
  @NamedQueries(
 		value = {
- @NamedQuery(name = Investment.GET_BY_INVESTMENTID, query = "SELECT b FROM Investment b"),
+ @NamedQuery(name = Investment.GET_BY_INVESTMENTID, query = "SELECT b FROM Investment b WHERE b.investmentID=:investmentID"),
  @NamedQuery(name = Investment.GET_ALL, query = "SELECT b FROM Investment b"),
 		}
 		)
@@ -36,19 +36,35 @@ public class Investment implements Serializable{
 	@Column(name = "investment_id", nullable = false)
 	private Long investmentID;
 	
-	@Column(name = "investor_id", nullable = false)
+	@Column(name = "investor_id", nullable = true)
 	private String investorID;
-	@Column(name = "invested_amount", nullable = false)
-	private BigDecimal investedAmount;
+	@Column(name = "invested_amount", nullable = true)
+	private double investedAmount;
 	@Enumerated(EnumType.ORDINAL)
-	@Column(name = "investment_category_id", nullable = false)
+	@Column(name = "investment_investmentcategory_id", nullable = true)
 	private InvestmentCategory investmentCategory;
+	
+	public void setInvestmentCategory(InvestmentCategory investmentCategory){
+		this.investmentCategory = investmentCategory;
+	}
+	
+	public void setInvestedAmount(double investedAmount){
+		this.investedAmount = investedAmount;
+	}
+	
+	public void setInvestorID(String investorID){
+		this.investorID = investorID;
+	}
+	
+	public void setInvestmentID(Long investmentID){
+		this.investmentID = investmentID;
+	}
 	
 	public InvestmentCategory getInvestmentCategory(){
 		return investmentCategory;
 	}
 	
-	public BigDecimal getInvestedAmount(){
+	public double getInvestedAmount(){
 		return investedAmount;
 	}
 	

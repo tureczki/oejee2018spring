@@ -1,6 +1,6 @@
 package org.tureczki.projectmico.weblayer.servlet;
 
-import org.tureczki.projectmico.ejbservice.domain.InvestmentStub;
+import org.tureczki.projectmico.ejbservice.domain.*;
 import org.tureczki.projectmico.ejbservice.facade.InvestmentFacade;
 import org.tureczki.projectmico.ejbservice.exception.FacadeException;
 import javax.ejb.EJB;
@@ -26,13 +26,14 @@ public class InvestmentPingServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {
 		
-		String investmentID = request.getParameter("investmentid");
+		String azonosito = request.getParameter("azonosito");
 		
 		try{
-			InvestmentStub investment = this.facade.getInvestment(investmentID);
-			request.setAttribute("investment", investment);
-		} catch(final FacadeException e){
+			TesztadatStub tesztadat = this.facade.getTesztadat(azonosito);
+			request.setAttribute("tesztadat", tesztadat);
+		} catch(final Exception e){
 			LOGGER.error(e, e);
+			throw new IOException(e.getLocalizedMessage());
 		}
 		
         RequestDispatcher dispatcher = getServletContext()

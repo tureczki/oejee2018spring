@@ -1,4 +1,5 @@
 org\tureczki\persistence\entity\Investment.class
+org\tureczki\persistence\service\InvestmentServiceImpl.class
 org\tureczki\persistence\entity\trunk\InvestmentCategory.class
 org\tureczki\persistence\service\InvestmentService.class
-org\tureczki\persistence\service\InvestmentServiceImpl.class
+org\tureczki\persistence\entity\Tesztadat.class

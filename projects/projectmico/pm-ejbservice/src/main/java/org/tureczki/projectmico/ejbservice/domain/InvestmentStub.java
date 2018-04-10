@@ -16,6 +16,14 @@ public class InvestmentStub {
 		this.investedAmount = investedAmount;
 		this.investmentCategory = investmentCategory;
 	}
+	
+    public void setInvestedAmount(BigDecimal investedAmount) {
+        this.investedAmount = investedAmount;
+    }
+
+    public BigDecimal getInvestedAmount() {
+        return investedAmount;
+}
 	 
 	public String toString(){ 
 	  return "Investment ID: " + this.investmentID;  

@@ -4,5 +4,6 @@ D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmi
 D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\domain\InvestmentStub.java
 D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\converter\InvestmentConverter.java
 D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\domain\InvestmentCategoryStub.java
+D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\domain\TesztadatStub.java
 D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\facade\InvestmentFacade.java
 D:\Workspace_mICO\projectmico\pm-ejbservice\src\main\java\org\tureczki\projectmico\ejbservice\exception\FacadeException.java

@@ -11,6 +11,7 @@ import org.tureczki.persistence.service.*;
 import org.tureczki.projectmico.ejbservice.converter.*;
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import org.tureczki.projectmico.ejbservice.domain.TesztadatStub;
 
 @Stateless(mappedName = "ejb/investmentFacade")
 public class InvestmentFacadeImpl implements InvestmentFacade {
@@ -24,13 +25,18 @@ public class InvestmentFacadeImpl implements InvestmentFacade {
 	private InvestmentConverter converter;
 	
 	@Override
-	public InvestmentStub getInvestment(String investmentID) throws FacadeException{
-		if(LOGGER.isDebugEnabled()){
-			LOGGER.debug("Get investment (investment ID: " + investmentID + ") ");
+	public TesztadatStub getTesztadat(String azonosito) throws Exception {
+		try {
+			final TesztadatStub stub = this.converter.to(this.service.read(azonosito));
+			if (LOGGER.isDebugEnabled()) {
+				LOGGER.debug("Get investment by investment_id (" + azonosito + ") --> " + stub);
+			}
+			return stub;
+		} catch (final Exception e) {
+			LOGGER.error(e, e);
+			throw new Exception(e.getLocalizedMessage());
 		}
-		return new InvestmentStub("TBP4TKWI", investmentID,
-				new BigDecimal(9793979), InvestmentCategoryStub.ETH);
-	}
+}
 	
 	@Override
 	public List<InvestmentStub> getInvestments(InvestmentCriteria criteria) throws FacadeException{
