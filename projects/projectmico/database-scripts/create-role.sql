@@ -1,0 +1,1 @@
+create role projectmico_role with nosuperuser nocreatedb nocreaterole;
