@@ -37,3 +37,12 @@ CREATE TABLE Currencies (
 );
 
 ALTER TABLE Currencies OWNER TO postgres;
+
+CREATE TABLE Paymentoptions (
+	productname CHARACTER VARYING(100) NOT NULL,
+	pricecurrency CHARACTER VARYING(100) NOT NULL,
+	price REAL NOT NULL,
+	CONSTRAINT PK_PAYMENTOPTIONS_PRODUCTNAME PRIMARY KEY (productname, pricecurrency)
+);
+
+ALTER TABLE Paymentoptions OWNER TO postgres;
