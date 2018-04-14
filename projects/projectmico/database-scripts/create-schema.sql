@@ -78,4 +78,4 @@ CREATE TABLE Blacklist (
 	CONSTRAINT PK_BLACKLIST_EMAIL PRIMARY KEY (email)
 );
 
-ALTER TABLE Blacklist TO postgres;
+ALTER TABLE Blacklist OWNER TO postgres;
