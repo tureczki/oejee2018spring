@@ -1,11 +1,11 @@
 package org.tureczki.projectmico.ejbservice.facade;
 
 import javax.ejb.Local;
-import org.tureczki.projectmico.ejbservice.domain.UserFacadeStub;
+import org.tureczki.projectmico.ejbservice.domain.UserStub;
 
 @Local
 public interface UserFacade {
 	
-	UserFacadeStub getUser(String email) throws Exception;
+	UserStub getUserStub(String email) throws Exception;
 
 }

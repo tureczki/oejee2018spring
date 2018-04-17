@@ -1,9 +1,14 @@
+org\tureczki\persistence\service\UserFacadeImpl.class
+org\tureczki\projectmico\ejbservice\converter\UserConverterImpl.class
 org\tureczki\projectmico\ejbservice\domain\InvestmentCategoryStub.class
+org\tureczki\projectmico\ejbservice\domain\UserStub.class
 org\tureczki\projectmico\ejbservice\facade\InvestmentFacadeImpl.class
 org\tureczki\projectmico\ejbservice\converter\InvestmentConverter.class
 org\tureczki\projectmico\ejbservice\domain\InvestmentCriteria.class
 org\tureczki\projectmico\ejbservice\domain\TesztadatStub.class
-org\tureczki\projectmico\ejbservice\domain\InvestmentStub.class
 org\tureczki\projectmico\ejbservice\facade\InvestmentFacade.class
-org\tureczki\projectmico\ejbservice\converter\InvestmentConverterImpl.class
 org\tureczki\projectmico\ejbservice\exception\FacadeException.class
+org\tureczki\projectmico\ejbservice\facade\UserFacade.class
+org\tureczki\projectmico\ejbservice\converter\UserConverter.class
+org\tureczki\projectmico\ejbservice\domain\InvestmentStub.class
+org\tureczki\projectmico\ejbservice\converter\InvestmentConverterImpl.class

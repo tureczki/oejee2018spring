@@ -3,6 +3,7 @@ package org.tureczki.persistence.service;
 import org.tureczki.persistence.service.UserService;
 import org.tureczki.projectmico.ejbservice.converter.UserConverter;
 import org.tureczki.projectmico.ejbservice.domain.UserStub;
+import org.tureczki.projectmico.ejbservice.facade.UserFacade;
 import javax.ejb.*;
 import org.apache.log4j.Logger;
 
@@ -18,7 +19,7 @@ public class UserFacadeImpl implements UserFacade {
  private UserConverter converter;
 
  @Override
- public UserStub getUser(String email) throws Exception {
+ public UserStub getUserStub(String email) throws Exception {
   try {
    final UserStub stub = this.converter.to(this.service.readUser(email));
    if (LOGGER.isDebugEnabled()) {

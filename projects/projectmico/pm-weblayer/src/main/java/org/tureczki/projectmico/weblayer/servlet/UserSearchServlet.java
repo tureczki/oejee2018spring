@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import org.apache.log4j.Logger;
 import javax.servlet.RequestDispatcher;
+import org.tureczki.projectmico.ejbservice.facade.UserFacade;
 
 @WebServlet("/usersearch")
 public class UserSearchServlet extends HttpServlet {

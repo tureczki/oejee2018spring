@@ -1,5 +1,8 @@
 org\tureczki\persistence\entity\Investment.class
 org\tureczki\persistence\service\InvestmentServiceImpl.class
+org\tureczki\persistence\service\UserService.class
 org\tureczki\persistence\entity\trunk\InvestmentCategory.class
+org\tureczki\persistence\entity\User.class
 org\tureczki\persistence\service\InvestmentService.class
 org\tureczki\persistence\entity\Tesztadat.class
+org\tureczki\persistence\service\UserServiceImpl.class
