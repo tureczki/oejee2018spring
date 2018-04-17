@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @NamedQueries( value = { @NamedQuery( name = "User.GET_BY_EMAIL", query = "select u from User u where email =:email" ) } )
 public class User {
 	
-	public static final String GET_BY_EMAIL = "User.getByEmail";
+	public static final String GET_BY_EMAIL = "User.GET_BY_EMAIL";
 	
 	public User(){ }
 	
