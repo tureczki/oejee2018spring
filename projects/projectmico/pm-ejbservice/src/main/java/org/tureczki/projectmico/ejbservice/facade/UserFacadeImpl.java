@@ -7,8 +7,8 @@ import org.tureczki.projectmico.ejbservice.facade.UserFacade;
 import javax.ejb.*;
 import org.apache.log4j.Logger;
 
-@Stateless(mappedName = "ejb/userFacade")
-public class UserFacadeImpl implements UserFacade {
+@Stateless(mappedName = "ejb/userFacade", name = "UserFacadeRemote.UserService")
+public class UserFacadeImpl implements UserFacade, UserFacadeRemote {
 
  private static final Logger LOGGER = Logger.getLogger(UserFacadeImpl.class);
 
