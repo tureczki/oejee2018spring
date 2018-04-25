@@ -1,12 +1,12 @@
 package org.tureczki.projectmico.ejbserviceclient;
 
 import javax.ejb.Remote;
-import org.tureczki.projectmico.ejbserviceclient.domain.UserStub;
+import org.tureczki.projectmico.ejbserviceclient.domain.UserStubRemote;
 
 @Remote
 public interface UserFacadeRemote{
 	
 	String BEAN_NAME = "UserService";
-	UserStub getUserStub (String email) throws ServiceExceptions;
+	UserStubRemote getUserStubRemote (String email) throws Exception;
 	
 }

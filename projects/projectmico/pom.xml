@@ -11,6 +11,7 @@
     <modules>
         <module>pm-ear</module>
         <module>pm-ejbservice</module>
+        <module>pm-ejbserviceclient</module>
         <module>pm-weblayer</module>
         <module>pm-persistence</module>
     </modules>
