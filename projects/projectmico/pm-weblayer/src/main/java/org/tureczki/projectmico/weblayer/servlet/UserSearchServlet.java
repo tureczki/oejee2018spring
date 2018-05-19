@@ -44,6 +44,7 @@ public class UserSearchServlet extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/WEB-INF/userdata.jsp");
         dispatcher.forward(request, response);
+	
 		
 	}
 }

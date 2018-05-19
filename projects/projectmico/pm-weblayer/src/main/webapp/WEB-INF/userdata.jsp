@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="style/page.css" />
 <title>User Data /\ Project mICO</title>
 </head>
-<body>
+<body background=<%=request.getContextPath()%>/img/background.jpg>
     <jsp:useBean id="userstub" class="org.tureczki.projectmico.ejbservice.domain.UserStub" scope="request" />
     	<h1>Email: <jsp:getProperty name="userstub" property="email" /></h1>
     <br/><br/>

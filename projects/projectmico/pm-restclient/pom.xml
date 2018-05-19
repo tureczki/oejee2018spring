@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pm-restclient</artifactId>
+	<packaging>war</packaging>
+	<name>Project mICO RESTful Webservices</name>
+	<description>A system to support an upcoming ICO.</description>
+	<parent>
+		<groupId>org.tureczki.projectmico</groupId>
+		<artifactId>projectmico</artifactId>
+		<version>1.0</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.tureczki.projectmico</groupId>
+			<artifactId>pm-ejbservice</artifactId>
+			<version>${project.parent.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${version.log4j}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>java</groupId>
+			<artifactId>javaee-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>
