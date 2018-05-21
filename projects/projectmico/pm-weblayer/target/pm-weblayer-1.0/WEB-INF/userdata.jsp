@@ -1,14 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="org.tureczki.projectmico.ejbservice.domain.UserStub" %>
+<%@ page import="org.tureczki.projectmico.ejbservice.domain.CurrencyStub" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="style/page.css" />
-<title>User Data /\ Project mICO</title>
+<title>Cryptocurrencies /\ Project mICO</title>
 </head>
 <body background=<%=request.getContextPath()%>/img/background.jpg>
-    <jsp:useBean id="userstub" class="org.tureczki.projectmico.ejbservice.domain.UserStub" scope="request" />
+
+<jsp:useBean id="userstub" class="org.tureczki.projectmico.ejbservice.domain.UserStub" scope="request" />
+
     	<h1>Email: <jsp:getProperty name="userstub" property="email" /></h1>
     <br/><br/>
     <br/><br/>
