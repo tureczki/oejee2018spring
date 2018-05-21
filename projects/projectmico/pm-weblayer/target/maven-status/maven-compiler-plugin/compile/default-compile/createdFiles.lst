@@ -2,3 +2,4 @@ org\tureczki\projectmico\weblayer\CurrencyRestService.class
 org\tureczki\projectmico\weblayer\servlet\ListCurrenciesServlet.class
 org\tureczki\projectmico\weblayer\ProjectmicoRestApplication.class
 org\tureczki\projectmico\weblayer\servlet\UserSearchServlet.class
+org\tureczki\projectmico\weblayer\servlet\DemoHomeServlet.class
