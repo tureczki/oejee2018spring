@@ -51,8 +51,8 @@ li a:hover {
 </div>
 
 <ul>
-  <li><a href="#home">Demo home</a></li>
-  <li><a href="#news">Cryptocurrencies</a></li>
+  <li><a href="http://localhost:8080/projectmico/demohome">Demo home</a></li>
+  <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
 </ul>
 
 
