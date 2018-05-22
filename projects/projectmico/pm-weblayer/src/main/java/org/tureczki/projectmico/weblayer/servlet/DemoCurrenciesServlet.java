@@ -24,7 +24,7 @@ public class DemoCurrenciesServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {	
 		
-	    JSONArray ja = new JSONArray();
+/*	    JSONArray ja = new JSONArray();
 		
 		JSONObject jsonObject = new JSONObject();
 	    jsonObject.put("Name", "Bitcoin"); 
@@ -51,7 +51,7 @@ public class DemoCurrenciesServlet extends HttpServlet {
 	    response.setContentType("application/json");
 	    response.setCharacterEncoding("UTF-8");
 	    response.getWriter().write(json);
-	    request.setAttribute("listofcurrencies", json);
+	    request.setAttribute("listofcurrencies", json); */
 	    
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/WEB-INF/democurrencies.jsp");

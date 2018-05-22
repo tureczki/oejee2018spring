@@ -15,21 +15,55 @@ table, th, td {
     border-collapse: collapse;
 }
 table#t01 tr:nth-child(even) {
-    background-color: #00ffed;
+   background-color: rgb(119, 227, 255, .5);
 }
 table#t01 tr:nth-child(odd) {
-   background-color: #00ffed;
+   background-color: rgb(119, 227, 255, .5);
 }
 table#t01 th {
     border: 1px solid white;
-    background-color: black;
+    background-color: #333333;
     color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
 }
 </style>
 
+
+<ul>
+  <li><a href="http://localhost:8080/projectmico/demohome">Home</a></li>
+  <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
+  <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
+  <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
+  <li><a href="http://localhost:8080/projectmico/history">History</a></li>
+  <li><a href="http://localhost:8080/projectmico/ticketclient">Client</a></li>
+  <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
+</ul>
+
 <table id="t01" style="width:100%">
   <tr>
-    <th colspan="3">List of supported cryptocurrencies</th>
+    <th colspan="3" style="background-color:rgba(7, 4, 96,.5);">List of supported cryptocurrencies</th>
   </tr>
   <tr>
     <th>Name</th>
@@ -52,6 +86,7 @@ table#t01 th {
     <td>0.004242</td>
   </tr>
 </table>
+
 
 
 </body>

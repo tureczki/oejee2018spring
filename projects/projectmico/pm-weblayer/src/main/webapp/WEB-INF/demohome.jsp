@@ -46,20 +46,19 @@ li a:hover {
   <p>Source: https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp (2018.05.21.)</p>
 </div>
 
-<div style="background-color:rgb(44, 51, 63, .5);;color:white;padding:20px;">
+<div style="background-color:#333333;;color:white;padding:20px;">
 <h2 align="center">Table of content</h2>
-</div>
 
 <ul>
   <li><a href="http://localhost:8080/projectmico/demohome">Home</a></li>
-  <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
+  <li><a href="http://localhost:8080/projectmico/democurrencies">Cryptocurrencies</a></li>
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>
   <li><a href="http://localhost:8080/projectmico/ticketclient">Client</a></li>
   <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
 </ul>
-
+</div>
 
 </body>
 </html>

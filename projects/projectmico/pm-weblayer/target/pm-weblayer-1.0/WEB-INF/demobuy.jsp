@@ -34,22 +34,6 @@ li a:hover {
 }
 </style>
 
-<div style="background-color:rgba(0, 165, 22,.5);;color:white;padding:20px;">
-<h1 align="center">Project mICO demo</h1>
-<h2 align="center">Tureczki Bence</h2>
-</div>
-
-<div style="background-color:rgba(7, 4, 96,.5);;color:white;padding:20px;">
-  <h2>Initial Coin Offering (ICO)</h2>
-  <p>Definition:<p>
-  <p>An unregulated means by which funds are raised for a new cryptocurrency venture. An Initial Coin Offering (ICO) is used by startups to bypass the rigorous and regulated capital-raising process required by venture capitalists or banks. In an ICO campaign, a percentage of the cryptocurrency is sold to early backers of the project in exchange for legal tender or other cryptocurrencies, but usually for Bitcoin.</p>
-  <p>Source: https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp (2018.05.21.)</p>
-</div>
-
-<div style="background-color:#333333;;color:white;padding:20px;">
-<h2 align="center">Table of content</h2>
-</div>
-
 <ul>
   <li><a href="http://localhost:8080/projectmico/demohome">Home</a></li>
   <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
@@ -60,6 +44,12 @@ li a:hover {
   <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
 </ul>
 
+<div style="background-color:rgba(0, 165, 22,.5);color:white;padding:20px;">
+ <form>
+   Buy <input style="color:black;" type="text" name="mico"> mICO<br><br>
+  <input style="color:black;" type="submit" value="Submit">
+</form> 
+</div>
 
 </body>
 </html>

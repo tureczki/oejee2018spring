@@ -1,5 +1,10 @@
 D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\ProjectmicoRestApplication.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoHistoryServlet.java
 D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\CurrencyRestService.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoBuyServlet.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoTicketAdminServlet.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoCurrenciesServlet.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoProfileServlet.java
+D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoTicketClientServlet.java
 D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\DemoHomeServlet.java
-D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\ListCurrenciesServlet.java
 D:\Workspace_mICO\projectmico\pm-weblayer\src\main\java\org\tureczki\projectmico\weblayer\servlet\UserSearchServlet.java
