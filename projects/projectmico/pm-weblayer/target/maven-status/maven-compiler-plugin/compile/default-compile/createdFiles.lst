@@ -1,5 +1,10 @@
 org\tureczki\projectmico\weblayer\CurrencyRestService.class
-org\tureczki\projectmico\weblayer\servlet\ListCurrenciesServlet.class
-org\tureczki\projectmico\weblayer\ProjectmicoRestApplication.class
+org\tureczki\projectmico\weblayer\servlet\DemoProfileServlet.class
 org\tureczki\projectmico\weblayer\servlet\UserSearchServlet.class
+org\tureczki\projectmico\weblayer\ProjectmicoRestApplication.class
+org\tureczki\projectmico\weblayer\servlet\DemoTicketClientServlet.class
+org\tureczki\projectmico\weblayer\servlet\DemoBuyServlet.class
+org\tureczki\projectmico\weblayer\servlet\DemoTicketAdminServlet.class
+org\tureczki\projectmico\weblayer\servlet\DemoCurrenciesServlet.class
+org\tureczki\projectmico\weblayer\servlet\DemoHistoryServlet.class
 org\tureczki\projectmico\weblayer\servlet\DemoHomeServlet.class
