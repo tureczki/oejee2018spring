@@ -64,26 +64,30 @@ li a:hover {
 <h1 align="center">Order history</h1>
 </div>
 <div style="background-color:rgba(7, 4, 96,.5);color:white;padding:20px;">
+
+<%
+String address = "3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC"; 
+if(request.getParameter("basecurrency") == null){ address = "Not known"; }
+%>
+
 <table id="t01" style="width:100%">
   <tr>
     <th colspan="7">Tickets</th>
   </tr>
   <tr>
-    <th>Order ID</th>
     <th>E-mail</th>
-    <th>Amount</th> 
+    <th>Base currency</th> 
     <th>Receive address</th>    
     <th>Message</th>
     <th>Date</th>
     <th>Status</th>
   </tr>
   <tr>
-    <td>0</td>
-    <td>tureczkibence@gmail.com</td>
-    <td>9877</td>
-    <td>rg4u34irz43iz3343443</td>    
-    <td>Thank you in advance!</td>
-    <td>2018.05.22</td>
+    <td><%=request.getParameter("email")%></td>
+    <td><%=request.getParameter("basecurrency")%></td>
+    <td><%=address%></td>    
+    <td><%=request.getParameter("message")%></td>
+    <td>2018.05.23</td>
     <td>Closed</td>
   </tr>
 </table>

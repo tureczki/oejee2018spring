@@ -48,10 +48,10 @@ li a:hover {
 <h1 align="center">Ticket client</h1>
 </div>
 <div style="background-color:rgba(7, 4, 96,.5);color:white;padding:20px;">
- <form>
+<form action = "http://localhost:8080/projectmico/history" method="GET">
    E-mail: <input style="color:black;" type="text" name="email"><br><br>
    Message:<br><br>
-   <textarea style="color:black;" rows="4" cols="50"></textarea>
+  <input type="textarea" name="message" style="color:black;" rows="4" cols="50"></textarea>
   <input style="color:black;" type="submit" value="Submit">
 </form> 
 </div>

@@ -61,9 +61,9 @@ li a:hover {
 <div>Description: Hi! I am a full-time student at Óbuda University. I have passion for learning J2EE development. I see great potential in Project mICO.</div>
 </div>
 
-<form>
+<form action = "http://localhost:8080/projectmico/buy" method="GET">
 <div style="background-color:rgba(7, 4, 96,.5);color:white;padding:20px;">
-   I would like to buy <input style="color:black;" type="text" name="mico"> mICO<br><br>
+   I would like to buy <input style="color:black;" type="text" name="mico"> mICO for <input style="color:black;" type="text" name="basecurrency"><br><br>
        <input style="color:black;" type="submit" value="Go to payment page!">
 </div>
 </form>
