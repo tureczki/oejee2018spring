@@ -16,6 +16,9 @@ import javax.servlet.RequestDispatcher;
 import org.tureczki.projectmico.ejbservice.facade.UserFacade;
 import com.google.gson.*;
 import org.json.*;
+import java.io.*;
+import java.net.*;
+import java.util.ArrayList;
 
 @WebServlet("/democurrencies")
 public class DemoCurrenciesServlet extends HttpServlet {
@@ -24,34 +27,34 @@ public class DemoCurrenciesServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {	
 		
-/*	    JSONArray ja = new JSONArray();
+		   ArrayList<String> listofcurrencies = new ArrayList<String>();
 		
-		JSONObject jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Bitcoin"); 
-	    jsonObject.put("Code/Unit", "BTC"); 
-	    jsonObject.put("USD value", "8000"); 
-	    ja.put(jsonObject);
-	    
-	    jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Litecoin"); 
-	    jsonObject.put("Code/Unit", "LTC"); 
-	    jsonObject.put("USD value", "137");
-	    ja.put(jsonObject);
-	    
-		jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Dogecoin"); 
-	    jsonObject.put("Code/Unit", "DOGE"); 
-	    jsonObject.put("USD value", "0.004242"); 
-	    ja.put(jsonObject);
+		   String recv;
+		   String recvbuff = "";
+		   URL jsonpage = new URL("http://localhost:8080/projectmico/api/currency/list");
+		   URLConnection urlcon = jsonpage.openConnection();
+		   BufferedReader buffread = new BufferedReader(new InputStreamReader(urlcon.getInputStream()));
 
-	    JSONObject mainObj = new JSONObject();
-	    mainObj.put("currencies", ja);
+		   while ((recv = buffread.readLine()) != null)
+		    recvbuff += recv;
+		   buffread.close();
+		   
+		   JSONObject jsonObj = new JSONObject(recvbuff);
+		   JSONArray ja = jsonObj.getJSONArray("currencies");
+		   
+		   for (int i=0; i<ja.length(); i++) {
+			    JSONObject item = ja.getJSONObject(i);
+			    String name = item.getString("name");
+			    String unitcode = item.getString("unitcode");
+			    String valueinusd = item.getString("valueinusd");
+			    listofcurrencies.add(name);
+			    listofcurrencies.add(unitcode);
+			    listofcurrencies.add(valueinusd);
+			}
+		   
+		   
+		   request.setAttribute("listofcurrencies", listofcurrencies);
 		
-	    String json = new Gson().toJson(ja);
-	    response.setContentType("application/json");
-	    response.setCharacterEncoding("UTF-8");
-	    response.getWriter().write(json);
-	    request.setAttribute("listofcurrencies", json); */
 	    
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/WEB-INF/democurrencies.jsp");

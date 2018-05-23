@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,26 +66,25 @@ li a:hover {
   <tr>
     <th colspan="3" style="background-color:rgba(7, 4, 96,.5);">List of supported cryptocurrencies</th>
   </tr>
-  <tr>
+    <tr>
     <th>Name</th>
     <th>Unit/Code</th> 
     <th>Value in USD</th>
   </tr>
+  <% 
+   
+  ArrayList<String> listofcurrencies = (ArrayList<String>) request.getAttribute("listofcurrencies");
+  for (int i=0; i<listofcurrencies.size() - 2; i = i + 3) {
+  	String name = listofcurrencies.get(i);
+  	String unitcode = listofcurrencies.get(i+1);
+  	String valueinusd = listofcurrencies.get(i+2);
+  %>
   <tr>
-    <td>Bitcoin</td>
-    <td>BTC</td>
-    <td>8000</td>
+    <td><%=name%></th>
+    <td><%=unitcode%></th> 
+    <td><%=valueinusd%></th>
   </tr>
-  <tr>
-    <td>Litecoin</td>
-    <td>LTC</td>
-    <td>137</td>
-  </tr>
-  <tr>
-    <td>Dogecoin</td>
-    <td>DOGE</td>
-    <td>0.004242</td>
-  </tr>
+  <% } %>
 </table>
 
 
