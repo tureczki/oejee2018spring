@@ -36,7 +36,7 @@ li a:hover {
 
 <ul>
   <li><a href="http://localhost:8080/projectmico/demohome">Home</a></li>
-  <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
+  <li><a href="http://localhost:8080/projectmico/democurrencies">Cryptocurrencies</a></li>
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>

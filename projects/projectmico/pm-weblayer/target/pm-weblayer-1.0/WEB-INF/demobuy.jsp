@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="style/page.css" />
-<title>Home /\ Project mICO</title>
+<title>Buy /\ Project mICO</title>
 </head>
 <body background=<%=request.getContextPath()%>/img/background.jpg>
 
@@ -36,7 +36,7 @@ li a:hover {
 
 <ul>
   <li><a href="http://localhost:8080/projectmico/demohome">Home</a></li>
-  <li><a href="http://localhost:8080/projectmico/listcurrencies">Cryptocurrencies</a></li>
+  <li><a href="http://localhost:8080/projectmico/democurrencies">Cryptocurrencies</a></li>
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>
@@ -44,11 +44,19 @@ li a:hover {
   <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
 </ul>
 
-<div style="background-color:rgba(0, 165, 22,.5);color:white;padding:20px;">
- <form>
-   Buy <input style="color:black;" type="text" name="mico"> mICO<br><br>
-  <input style="color:black;" type="submit" value="Submit">
-</form> 
+<div style="background-color:rgba(0, 165, 22,.5);;color:white;padding:20px;">
+<h1 align="center">Buy mICO</h1>
+</div>
+
+<div style="background-color:rgba(7, 4, 96,.5);color:white;padding:20px;">
+
+   Please, send "1" BTC to the address: fjoerfjo43j3onj<br>
+   When you are done, connect an e-mail address to the order!<br><br>
+   E-mail: <input style="color:black;" type="text" name="email"><br><br>
+   Custom comment (e.g.: paid low fee, expect long transaction time):<br><br>
+   <textarea style="color:black;" rows="4" cols="50"></textarea>
+  <input style="color:black;" type="submit" value="I sent the payment">
+
 </div>
 
 </body>
