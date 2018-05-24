@@ -19,16 +19,21 @@ import org.json.*;
 import java.io.*;
 import java.net.*;
 import java.util.ArrayList;
+import java.util.function.Consumer;
+import java.lang.FunctionalInterface;
+import org.tureczki.projectmico.weblayer.servlet.*;
+
 
 @WebServlet("/democurrencies")
 public class DemoCurrenciesServlet extends HttpServlet {
 	
+	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {	
-		
+		  
 		   ArrayList<String> listofcurrencies = new ArrayList<String>();
-		
+			
 		   String recv;
 		   String recvbuff = "";
 		   URL jsonpage = new URL("http://localhost:8080/projectmico/api/currency/list");
@@ -52,12 +57,20 @@ public class DemoCurrenciesServlet extends HttpServlet {
 			    listofcurrencies.add(valueinusd);
 			}
 		   
-		   
-		   request.setAttribute("listofcurrencies", listofcurrencies);
-		
-	    
-        RequestDispatcher dispatcher = getServletContext()
-                .getRequestDispatcher("/WEB-INF/democurrencies.jsp");
-        dispatcher.forward(request, response);
+			  request.setAttribute("listofcurrencies", listofcurrencies);
+		  
+		  Consumer consumer = DemoCurrenciesServlet::createJSON;	   
+		  consumer.accept("something");
+		  
+		  RequestDispatcher dispatcher = getServletContext()
+	                .getRequestDispatcher("/WEB-INF/democurrencies.jsp");
+	        dispatcher.forward(request, response);
+	   
 	}
+	
+   private static void createJSON(java.lang.Object o){
+	   
+		  
+	       
+   }
 }

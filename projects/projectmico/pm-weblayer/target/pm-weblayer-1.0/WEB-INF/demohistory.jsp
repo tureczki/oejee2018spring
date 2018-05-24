@@ -56,8 +56,7 @@ li a:hover {
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketclient">Client</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
+  <li><a href="http://localhost:8080/projectmico/ticketclient">Purchases</a></li>
 </ul>
 
 <div style="background-color:rgba(0, 165, 22,.5);;color:white;padding:20px;">
@@ -75,20 +74,22 @@ if(request.getParameter("basecurrency") == null){ address = "Not known"; }
     <th colspan="7">Tickets</th>
   </tr>
   <tr>
+    <th>Id</th>
     <th>E-mail</th>
-    <th>Base currency</th> 
-    <th>Receive address</th>    
-    <th>Message</th>
-    <th>Date</th>
-    <th>Status</th>
+    <th>Product name</th> 
+    <th>Date</th>    
+    <th>Amount</th>
+    <th>Price</th>
+    <th>Currency name</th>
   </tr>
   <tr>
-    <td><%=request.getParameter("email")%></td>
-    <td><%=request.getParameter("basecurrency")%></td>
-    <td><%=address%></td>    
-    <td><%=request.getParameter("message")%></td>
-    <td>2018.05.23</td>
-    <td>Closed</td>
+    <td><%=request.getAttribute("id")%></td>
+    <td><%=request.getAttribute("email")%></td>
+    <td><%=request.getAttribute("productname")%></td> 
+    <td><%=request.getAttribute("date")%></td>    
+    <td><%=request.getAttribute("amount")%></td>
+    <td><%=request.getAttribute("price")%></td>
+    <td><%=request.getAttribute("currencyname")%></td>
   </tr>
 </table>
 </div>

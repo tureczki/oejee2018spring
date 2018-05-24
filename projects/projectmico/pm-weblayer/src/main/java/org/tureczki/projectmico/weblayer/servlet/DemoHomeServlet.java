@@ -4,6 +4,10 @@ import org.tureczki.projectmico.ejbservice.domain.*;
 import org.tureczki.projectmico.ejbservice.facade.InvestmentFacade;
 import org.tureczki.projectmico.ejbservice.exception.FacadeException;
 import javax.ejb.EJB;
+import javax.management.InstanceAlreadyExistsException;
+import javax.management.MBeanRegistrationException;
+import javax.management.MalformedObjectNameException;
+import javax.management.NotCompliantMBeanException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +20,7 @@ import javax.servlet.RequestDispatcher;
 import org.tureczki.projectmico.ejbservice.facade.UserFacade;
 import com.google.gson.*;
 import org.json.*;
+import org.tureczki.projectmico.weblayer.*;
 
 @WebServlet("/demohome")
 public class DemoHomeServlet extends HttpServlet {
@@ -23,6 +28,15 @@ public class DemoHomeServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {	
+		
+		try{
+		SystemConfigManagement.Register();
+		}
+		catch(Exception e){
+			
+		}
+		
+		
 		
 	    JSONArray ja = new JSONArray();
 		

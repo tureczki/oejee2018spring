@@ -24,34 +24,13 @@ public class DemoHistoryServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws 
 		ServletException, IOException {	
 		
-	    JSONArray ja = new JSONArray();
-		
-		JSONObject jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Bitcoin"); 
-	    jsonObject.put("Code/Unit", "BTC"); 
-	    jsonObject.put("USD value", "8000"); 
-	    ja.put(jsonObject);
-	    
-	    jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Litecoin"); 
-	    jsonObject.put("Code/Unit", "LTC"); 
-	    jsonObject.put("USD value", "137");
-	    ja.put(jsonObject);
-	    
-		jsonObject = new JSONObject();
-	    jsonObject.put("Name", "Dogecoin"); 
-	    jsonObject.put("Code/Unit", "DOGE"); 
-	    jsonObject.put("USD value", "0.004242"); 
-	    ja.put(jsonObject);
-
-	    JSONObject mainObj = new JSONObject();
-	    mainObj.put("currencies", ja);
-		
-	    String json = new Gson().toJson(ja);
-	    response.setContentType("application/json");
-	    response.setCharacterEncoding("UTF-8");
-	    response.getWriter().write(json);
-	    request.setAttribute("listofcurrencies", json);
+	    request.setAttribute("id", "0");
+	    request.setAttribute("email", "programmer.tureczki@greattureczkibank.eu");
+	    request.setAttribute("productname", "mICO"); 
+	    request.setAttribute("date", "2018.05.24.");    
+	    request.setAttribute("amount", "20000");
+	    request.setAttribute("price", "0.0001");
+	    request.setAttribute("currencyname", "BTC");
 	    
         RequestDispatcher dispatcher = getServletContext()
                 .getRequestDispatcher("/WEB-INF/demohistory.jsp");

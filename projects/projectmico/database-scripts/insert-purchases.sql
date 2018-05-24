@@ -1,0 +1,1 @@
+INSERT INTO Purchases VALUES ('programmer.tureczki@greattureczkibank.eu', 'mICO', '2018.05.24.', 20000, 1500, 'BTC', 0 );

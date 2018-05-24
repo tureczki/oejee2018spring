@@ -58,8 +58,7 @@ li a:hover {
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketclient">Client</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
+  <li><a href="http://localhost:8080/projectmico/ticketclient">Purchases</a></li>
 </ul>
 
 <table id="t01" style="width:100%">

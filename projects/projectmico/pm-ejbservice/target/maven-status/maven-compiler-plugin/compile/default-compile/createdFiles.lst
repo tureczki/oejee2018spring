@@ -9,7 +9,9 @@ org\tureczki\projectmico\ejbservice\domain\TesztadatStub.class
 org\tureczki\projectmico\ejbservice\domain\CurrencyStub.class
 org\tureczki\projectmico\ejbservice\facade\InvestmentFacade.class
 org\tureczki\projectmico\ejbservice\exception\FacadeException.class
+org\tureczki\projectmico\ejbservice\domain\PurchaseStub.class
 org\tureczki\projectmico\ejbservice\facade\UserFacade.class
 org\tureczki\projectmico\ejbservice\converter\UserConverter.class
 org\tureczki\projectmico\ejbservice\domain\InvestmentStub.class
 org\tureczki\projectmico\ejbservice\converter\InvestmentConverterImpl.class
+org\tureczki\projectmico\ejbservice\facade\PurchaseFacade.class

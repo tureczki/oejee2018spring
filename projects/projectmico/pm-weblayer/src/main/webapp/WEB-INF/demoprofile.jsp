@@ -40,19 +40,20 @@ li a:hover {
   <li><a href="http://localhost:8080/projectmico/profile">Profile</a></li>
   <li><a href="http://localhost:8080/projectmico/buy">Buy</a></li>
   <li><a href="http://localhost:8080/projectmico/history">History</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketclient">Client</a></li>
-  <li><a href="http://localhost:8080/projectmico/ticketadmin">Admin</a></li>
+  <li><a href="http://localhost:8080/projectmico/ticketclient">Purchases</a></li>
 </ul>
 
 <div style="background-color:rgba(0, 165, 22,.5);color:white;padding:20px;">
 <h1 align="center">Profile</h1>
 </div>
 
+<jsp:useBean id="userstub" class="org.tureczki.projectmico.ejbservice.domain.UserStub" scope="request" />
+
 <div style="background-color:rgba(7, 4, 96,.5);color:white;padding:20px;">
 <div>Account information</div>
-<div>Email: bence.tureczki@gmail.com</div>
+<div>Email: <jsp:getProperty name="userstub" property="email" /></div>
 <div>mICO balance: 1500</div>
-<div>Balance in USD: 10000</div>
+<div>Balance in <jsp:getProperty name="userstub" property="currency" />: 10000</div>
 </div>
 
 <div style="background-color:rgba(0, 165, 22,.5);color:white;padding:20px;">
